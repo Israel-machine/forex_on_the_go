@@ -11,6 +11,8 @@ To Home route will convert the currency in To Host(country you are visiting) to 
 1. cd forex on the go
 2. npm install
 3. npm run dev
+4. if yout get this response: Failed to resolve import "react-router-dom" from "src/App.jsx". Does the file exist? 
+    run: npm install react-router-dom
 
 ### API used and endpoint(s):
 #### Exchange Rate API:
@@ -24,4 +26,5 @@ https://app.exchangerate-api.com/sign-in
 https://v6.exchangerate-api.com/v6/YOUR-API-KEY/codes
 
 ## CHALLENGES AND KNOWN BUGS: 
-    Users must click "convert" button again after clicking the "Switch" button to see the inverted conversion.
+1. Users must click "convert" button again after clicking the "Switch" button to see the inverted conversion.
+2. 
