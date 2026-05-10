@@ -1,16 +1,24 @@
-# React + Vite
+PROJECT TITLE: Forex On The Go
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DESCRIPTION: This REACT application allows a user to access exchangerate-api to access currency conversion rates. Users will have the ability to toggle through three different views (To Home, To Host, All Rates). To Home and To Host routes will allow users to convert the value of their input to which ever currency they select. If they wish, they can then invert the conversion by pressing the "Switch" button.
 
-Currently, two official plugins are available:
+Example: To Home route will convert the currency in To Host(country you are visiting) to the equivalent value in To Home (Country you are from). The "Switch" button will invert this conversion from To Home to To Host.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SET UP INSTRUCTIONS: Install Necesary Dependencies: react react-dom react-router-dom
 
-## React Compiler
+Initializing Application:
+    cd forex on the go
+    npm install
+    npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+API used and endpoint(s):
+    Exchange Rate API:
+        https://app.exchangerate-api.com/sign-in
+    
+    NOTE: 
+        1. Must sign up to gain access to API key
+        2. Must update API_Key variable in src/api.js to allow application to work
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+        Example API Access Key Integration Template:
+            https://v6.exchangerate-api.com/v6/YOUR-API-KEY/codes
+CHALLENGES AND KNOWN BUGS: Users must click "convert" button again after clicking the "Switch" button to see the inverted conversion.
