@@ -27,4 +27,3 @@ https://v6.exchangerate-api.com/v6/YOUR-API-KEY/codes
 
 ## CHALLENGES AND KNOWN BUGS: 
 1. Users must click "convert" button again after clicking the "Switch" button to see the inverted conversion.
-2. 
